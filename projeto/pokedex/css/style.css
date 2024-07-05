@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Playwrite DE Grund", cursive;
+    font-style: normal;
+    font-size: 1.1em;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #6ab7f5,#fff);
+    min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 10px;
+    position: relative;
+}
+
+.pokedex {
+    max-width: 425px;
+    width: 100%;
+}
+
+.pokemon__image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%,20%);    
+    height: 18%;
+}
+
+.pokemon__data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 53%;
+    right: 27%;
+    font-size: clamp(8px,5vw,25px);
+}
+
+.pokemon__name {
+    text-transform: capitalize;
+    color: #3a444d;
+}
+
+.form {
+    font-size: 0.6em;
+    position: absolute;
+    width: 70%;
+    top: 63%;
+    left: 10.5%;
+}
+
+.input__search {
+    width: 100%;
+    padding: 2%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #3a444d;
+    font-size: clamp(8px,5vh,0.8rem);
+    box-shadow: -3px, 4px 0 #888, -5px, 7px 0 #333;
+    /* box shadow não funcionou - https://youtu.be/SjtdH3dWLa8?t=1393 */
+}
